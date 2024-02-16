@@ -85,23 +85,24 @@ a {
 
 /*---------------------------------------hero section---------------------------------------*/
 .hero-sec {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 945px;
     /*border: 1px solid black;*/
     background-color: var(--grey);
     box-sizing: border-box;
     z-index: 0;
+    overflow: hidden;
 
 }
 
 .hero-img-wrapper {
     position: absolute;
     aspect-ratio: 413/531;
-    height: 740px;
+    height: 1000px;
     /*border: 5px solid red;*/
     right: 15%;
-    top: 5%;
+    bottom: -100px;
 
 }
 
@@ -115,7 +116,6 @@ a {
     z-index: 1;
     left: 0;
     right: 0;
-    top: 0;
     margin: auto;
 
 }
@@ -223,6 +223,7 @@ a {
     border: 2px solid var(--yellow);
     border-radius: 10px;
     padding: 0;
+    transition-duration: 0.3s;
     /*box-sizing: border-box;*/
 }
 
@@ -237,6 +238,7 @@ a {
     border-radius: 5px;
     align-items: center;
     justify-content: space-evenly;
+    transition-duration: 0.3s;
 
 }
 
@@ -251,4 +253,13 @@ a {
     /*box-shadow: ;*/
 
 }
+
+/*---------------------------------------about me section---------------------------------------*/
+.about-me-sec {
+    position: relative;
+    height: 1000px;
+    background-color: var(--grey);
+}
+
+
 
