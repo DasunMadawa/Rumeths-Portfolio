@@ -5,6 +5,7 @@
 :root {
     --yellow: #FFB400;
     --grey: #F0F0F6;
+    --blue: #6a78fd;
 }
 
 body {
@@ -23,7 +24,7 @@ header {
     position: fixed;
     width: 100%;
     height: 100px;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     z-index: 1;
     box-sizing: border-box;
 
@@ -32,7 +33,7 @@ header {
 nav {
     position: absolute;
     display: flex;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     height: fit-content;
     width: fit-content;
     right: 10%;
@@ -87,7 +88,7 @@ a {
     position: absolute;
     width: 100%;
     height: 945px;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     background-color: var(--grey);
     box-sizing: border-box;
     z-index: 0;
@@ -98,33 +99,83 @@ a {
     position: absolute;
     aspect-ratio: 413/531;
     height: 740px;
-    border: 5px solid red;
-    right: 10%;
-    bottom: 10%;
+    /*border: 5px solid red;*/
+    right: 15%;
+    top: 5%;
 
 }
 
 .hero-img {
     position: absolute;
-    height: 100%;
-    width: 100%;
+    height: 90%;
+    width: 90%;
     background-position: center;
     background-size: cover;
     background-image: url("/assets/img/hero-img.png");
     z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
 
 }
 
 .hero-img-bg {
     position: absolute;
-    height: 600px;
-    width: 600px;
-    left: -10px;
+    aspect-ratio: 1/1;
+    width: 100%;
+    left: 0;
+    right: 0;
     bottom: -10px;
-    border-radius: 50%;
-    background-color: blue;
+    margin: auto;
+    /*border: 1px solid blue;*/
     z-index: 0;
 
+}
+
+.img-bg {
+    position: absolute;
+    aspect-ratio: 1/1;
+    background-color: var(--blue);
+    border-radius: 50%;
+
+}
+
+.bg-1 {
+    width: 100%;
+    z-index: 5;
+}
+
+.bg-2 {
+    width: 110%;
+    top: -5%;
+    left: -5%;
+    opacity: 0.4;
+    z-index: 4;
+}
+
+.bg-3 {
+    width: 120%;
+    top: -10%;
+    left: -10%;
+    opacity: 0.3;
+    z-index: 3;
+}
+
+.bg-4 {
+    width: 130%;
+    top: -15%;
+    left: -15%;
+    opacity: 0.2;
+    z-index: 2;
+}
+
+.bg-5 {
+    width: 140%;
+    top: -20%;
+    left: -20%;
+    opacity: 0.1;
+    z-index: 1;
 }
 
 .hero-headers {
@@ -134,8 +185,8 @@ a {
     width: fit-content;
     height: fit-content;
     left: 10%;
-    top: 320px;
-    border: 1px solid black;
+    top: 280px;
+    /*border: 1px solid black;*/
 
 }
 
@@ -145,12 +196,12 @@ a {
 }
 
 .hero-headers > h4:first-child {
-    font-size: 36px;
+    font-size: 40px;
 
 }
 
 .hero-headers > h1:nth-child(2) {
-    font-size: 84px;
+    font-size: 92px;
     color: var(--yellow);
 }
 
@@ -159,15 +210,15 @@ a {
 }
 
 .hero-headers > h1:nth-child(3) {
-    font-size: 36px;
+    font-size: 44px;
 
 }
 
 .cv-btn {
     position: relative;
     margin: 10px 0;
-    width: 175px;
-    height: 45px;
+    width: 220px;
+    height: 60px;
     border: 2px solid var(--yellow);
     border-radius: 10px;
     padding: 0;
@@ -177,6 +228,7 @@ a {
 .cv-btn > a {
     display: flex;
     font-weight: 600;
+    font-size: 24px;
     color: var(--yellow);
     width: 100%;
     height: 100%;
