@@ -297,6 +297,81 @@ a {
     position: relative;
     height: 1000px;
     background-color: var(--grey);
+
+}
+
+.about-me-img-wrapper {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    /*left: 400px;*/
+    border: 1px solid black;
+
+}
+
+.upper-design {
+    position: absolute;
+    width: 150px;
+    height: 190px;
+    border-top: 5px solid var(--yellow);
+    border-left: 5px solid var(--yellow);
+    top: 80px;
+
+}
+
+.about-me-img-bg {
+    position: absolute;
+    width: 80%;
+    height: 75%;
+    border-radius: 0 50px 0 50px;
+    background-color: var(--blue);
+    bottom: 0;
+    left: 20px;
+
+}
+
+.about-me-img {
+    position: relative;
+    height: 400px;
+    aspect-ratio: 413/531;
+    background-image: url("/assets/img/hero-img.png");
+    background-position: center;
+    background-size: cover;
+
+}
+
+.bottom-design {
+    position: absolute;
+    width: 50%;
+    height: 40%;
+    border-radius: 0 50px 0 50px;
+    background-color: var(--yellow);
+    bottom: -30px;
+    right: 0;
+}
+
+.about-me-desc-wrapper {
+    position: relative;
+
+}
+
+.about-me-desc {
+    position: relative;
+    border: 1px solid red;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+
+}
+
+.about-me-header {
+    font-size: 48px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+
 }
 
 
