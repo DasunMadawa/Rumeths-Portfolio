@@ -6,6 +6,7 @@
     --white: #FFFFFF;
     --yellow: #FFB400;
     --grey: #F0F0F6;
+    --grey-borders: #E4E6EB;
     --blue: #6a78fd;
     --black: #000000;
 }
@@ -392,11 +393,22 @@ a {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 300;
-    margin: 0 0 50px;
+    margin: 0 0 80px;
     padding: 0;
-    border: 1px solid red;
 
 }
+
+/*.lang-notify-wrapper {*/
+/*    border: 1px solid black;*/
+
+/*}*/
+
+/*.lang-notify-wrapper > span {*/
+/*    width: 50px;*/
+/*    height: 60px;*/
+/*    display: inline-block;*/
+/*    border: 1px solid black;*/
+/*}*/
 
 #languages {
     padding: 0;
@@ -407,14 +419,67 @@ a {
 }
 
 .languages > i {
+    position: relative;
+    font-size: 28px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
-    border: 1px solid red;
+    width: 60px;
+    height: 60px;
+    background-color: var(--white);
+    color: var(--black);
+    box-shadow: var(--white) 0 0 25px 0;
     border-radius: 50px;
+    margin: 0 20px;
+
+}
+
+.languages > i:hover {
+    /*border: 2px solid var(--white);*/
+    /*color: var(--white);*/
+    /*background-color: var(--yellow);*/
+
+
+}
+
+.languages > i > span {
+    position: absolute;
+    display: inline-block;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    background-color: var(--yellow);
+    color: var(--white);
+    padding: 15px 20px;
+    border-radius: 25px;
+    stroke-linejoin: round;
+    stroke-width: 16;
+    top: -30px;
+    transition: all 0.7s cubic-bezier(0.68, -0.55, 0.265 , 1.55);
+    opacity: 0;
+
+}
+
+.languages > i:hover > span {
+    top: -65px;
+    opacity: 1;
+    pointer-events: auto;
+
+}
+
+.languages > i > span:before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: var(--yellow);
+    transform: rotate(45deg);
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
 
 }
 
