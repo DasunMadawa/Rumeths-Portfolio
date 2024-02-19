@@ -9,6 +9,12 @@
     --grey-borders: #E4E6EB;
     --blue: #6a78fd;
     --black: #000000;
+    --github_background: #333333;
+    --fb_background: #3B5999;
+    --linkedin_background: #0077b5;
+    --whatsapp_background: #25d366;
+    --telegram_background: #229ED9;
+
 }
 
 body {
@@ -225,7 +231,7 @@ a {
     width: fit-content;
     height: fit-content;
     left: 10%;
-    top: 280px;
+    top: 240px;
     /*border: 1px solid black;*/
 
 }
@@ -290,6 +296,124 @@ a {
     background-color: var(--yellow);
     box-shadow: var(--yellow) 0px 0px 25px 0px;
     /*box-shadow: ;*/
+
+}
+
+.social-icons {
+    position: relative;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    top: 60px;
+
+}
+
+.social-icons > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    color: var(--black);
+    background-color: var(--white);
+    border-radius: 50px;
+    font-size: 24px;
+    margin: 10px;
+
+}
+
+.social-icons > a > span {
+    position: absolute;
+    padding: 15px 20px;
+    background-color: var(--yellow);
+    color: var(--white);
+    font-size: 14px;
+    border-radius: 50px;
+    top: 0;
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265 , 1.55);
+
+}
+
+.social-icons > a > span:before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    transform: rotate(45deg);
+    background-color: var(--yellow);
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    margin: auto;
+
+}
+
+.social-icons > a:hover > span {
+    opacity: 1;
+    top: -55px;
+
+}
+
+#social-github:hover {
+    background-color: var(--github_background);
+    color: var(--white);
+}
+
+#social-linkedin:hover {
+    background-color: var(--linkedin_background);
+    color: var(--white);
+}
+
+#social-whatsapp:hover {
+    background-color: var(--whatsapp_background);
+    color: var(--white);
+}
+
+#social-telegram:hover {
+    background-color: var(--telegram_background);
+    color: var(--white);
+}
+
+#social-github > span {
+    background-color: var(--github_background);
+
+}
+
+#social-linkedin > span {
+    background-color: var(--linkedin_background);
+
+}
+
+#social-whatsapp > span {
+    background-color: var(--whatsapp_background);
+
+}
+
+#social-telegram > span {
+    background-color: var(--telegram_background);
+
+}
+
+
+#social-github > span:before {
+    background-color: var(--github_background);
+
+}
+
+#social-linkedin > span:before {
+    background-color: var(--linkedin_background);
+
+}
+
+#social-whatsapp > span:before {
+    background-color: var(--whatsapp_background);
+
+}
+
+#social-telegram > span:before {
+    background-color: var(--telegram_background);
 
 }
 
