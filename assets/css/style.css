@@ -6,7 +6,7 @@
     --white: #FFFFFF;
     --yellow: #FFB400;
     --grey: #F0F0F6;
-    --grey-borders: #E4E6EB;
+    --blue_shadow: #e1e8ff;
     --blue: #6a78fd;
     --black: #000000;
     --github_background: #333333;
@@ -96,6 +96,7 @@ a {
 #contact {
     width: fit-content;
     height: fit-content;
+    color: var(--yellow);
     padding: 0px 20px;
     border-radius: 50px 0 50px 50px;
 }
@@ -305,7 +306,7 @@ a {
 
 .cv-btn:hover {
     background-color: var(--yellow);
-    box-shadow: var(--yellow) 0px 0px 25px 0px;
+    box-shadow: var(--yellow) 0 0 25px 0;
     /*box-shadow: ;*/
 
 }
@@ -331,7 +332,7 @@ a {
     border-radius: 50px;
     font-size: 24px;
     margin: 10px;
-    transition-duration: 0.5s;
+    /*transition-duration: 0.5s;*/
     /*border: 5px solid red;*/
     cursor: unset;
 
@@ -380,6 +381,7 @@ a {
     border-radius: 50px;
     z-index: 1;
     cursor: pointer;
+    transition-duration: 0.5s;
 }
 
 #social-github > i:hover {
@@ -446,7 +448,6 @@ a {
 /*---------------------------------------about me section---------------------------------------*/
 .about-me-sec {
     position: relative;
-    height: 1000px;
     background-color: var(--grey);
     padding-top: 5%;
 
@@ -508,24 +509,30 @@ a {
 
 }
 
-.about-me-desc {
-    position: relative;
-    /*border: 1px solid red;*/
-    font-size: 18px;
-    font-family: "Roboto", sans-serif;
+.about-me-header ,
+.about-me-desc ,
+.languages-header ,
+#languages-sub-header {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
     font-style: normal;
-    font-weight: 100;
-    margin: 0;
-    padding: 0;
-
+    font-variation-settings: "slnt" 0;
 }
 
 .about-me-header {
     font-size: 48px;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 300;
+    font-weight: 600;
     margin: 100px 0 0 0;
+    padding: 0;
+
+}
+
+.about-me-desc {
+    position: relative;
+    /*border: 1px solid red;*/
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
     padding: 0;
 
 }
@@ -540,10 +547,17 @@ a {
     align-items: center;
     justify-content: center;
     font-size: 48px;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    margin: 0 0 80px;
+    font-weight: 600;
+    margin: 0 0 25px 0;
+    padding: 0;
+
+}
+
+#languages-sub-header {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+    margin: 0 0 80px 0;
     padding: 0;
 
 }
@@ -565,6 +579,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 80px;
 
 }
 
@@ -597,8 +612,11 @@ a {
     position: absolute;
     display: inline-block;
     font-size: 14px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
     background-color: var(--yellow);
     color: var(--white);
     padding: 15px 20px;
@@ -634,9 +652,107 @@ a {
 }
 
 
-/*---------------------------------------about me section---------------------------------------*/
+/*---------------------------------------services section---------------------------------------*/
 .services-sec {
+    position: relative;
     width: 100%;
-    height: 800px;
+    /*height: 800px;*/
+    background-color: var(--grey);
 
 }
+
+#services-sub-header {
+    font-size: 16px;
+    text-align: center;
+    /*font-family: "Roboto", sans-serif;*/
+    /*font-style: normal;*/
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+
+    margin: 0 0 80px 0;
+    padding: 0;
+
+}
+
+.services-cards-wrapper {
+    justify-content: center;
+}
+
+.services-cards-wrapper > div {
+    padding: 0;
+}
+
+.service-card {
+    position: relative;
+    display: flex;
+    aspect-ratio: 1/1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /*border: 1px solid red;*/
+    border-radius: 5px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    transition-duration: 0.4s;
+    padding: 50px 50px;
+    margin: 5px;
+
+}
+
+.service-card:hover {
+    box-shadow: var(--blue_shadow) 0 0 25px 0;
+}
+
+.service-card:hover {
+    background-color: var(--white);
+
+}
+
+.service-card > i ,
+.service-card > h4 ,
+.service-card > p {
+    /*position: absolute;*/
+    /*width: fit-content;*/
+    /*height: fit-content;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*margin: auto;*/
+    margin: 0;
+
+}
+
+.service-card > i {
+    color: #FFB400;
+    font-size: 64px;
+    margin-bottom: 20px;
+
+}
+
+.service-card > h4 {
+    font-size: 24px;
+    font-weight: 600;
+
+}
+
+.service-card > p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+
+}
+
+/*---------------------------------------projects section---------------------------------------*/
+.projects-sec {
+    width: 100%;
+    height: 500px;
+    background-color: var(--grey);
+
+}
+
+
