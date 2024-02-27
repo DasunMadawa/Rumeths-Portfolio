@@ -14,6 +14,7 @@
     --linkedin_background: #0077b5;
     --whatsapp_background: #25d366;
     --telegram_background: #229ED9;
+    --backdrop-filter-color-black: rgba(0, 0, 0, 0.2);
 
 }
 
@@ -658,6 +659,7 @@ a {
     width: 100%;
     /*height: 800px;*/
     background-color: var(--grey);
+    padding-bottom: 100px;
 
 }
 
@@ -750,8 +752,175 @@ a {
 /*---------------------------------------projects section---------------------------------------*/
 .projects-sec {
     width: 100%;
+    background-color: var(--grey);
+    padding-bottom: 80px;
+
+}
+
+.projects-wrapper {
+
+}
+
+#projects-sub-header {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.project-card {
+    border: 5px solid var(--white);
+    /*aspect-ratio: 16/9;*/
+    aspect-ratio: 4/3;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-color: rgba(0, 0, 0, 0.2);*/
+    /*backdrop-filter: blur(40px);*/
+    margin: 20px;
+    transition-duration: 0.5s;
+    overflow: hidden;
+
+}
+
+.project-card:hover {
+    background-size: 110%;
+
+}
+
+#project-card-1 {
+    background-image: url("/assets/img/projects/Web-Design-4.jpg");
+
+}
+
+#project-card-2 {
+    background-image: url("/assets/img/projects/Web-Design-6.jpg");
+
+}
+
+#project-card-3 {
+    background-image: url("/assets/img/projects/Web-Design-7.jpg");
+
+}
+
+#project-card-4 {
+    background-image: url("/assets/img/projects/Web-Design-2.jpg");
+
+}
+
+#project-card-5 {
+    background-image: url("/assets/img/projects/Web-Design-3.jpg");
+
+}
+
+#project-card-6 {
+    background-image: url("/assets/img/projects/Web-Design-6.jpg");
+
+}
+
+.card-content-wrapper {
+    position: relative;
+    top: 100%;
+    background-color: var(--backdrop-filter-color-black);
+    backdrop-filter: blur(10px);
+    aspect-ratio: 4/3;
+    color: var(--white);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.8s;
+    padding: 20px;
+
+}
+
+.project-card:hover > .card-content-wrapper {
+    top: 0;
+
+}
+
+.card-content-wrapper > h4 {
+    width: fit-content;
+    font-size: 24px;
+    margin: 5px 0 20px 0;
+    opacity: 0;
+
+}
+
+.card-content-wrapper > p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    opacity: 0;
+
+}
+
+.card-content-wrapper > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0;
+    border: 2px solid var(--white);
+    transition-duration: 0.3s!important;
+    opacity: 0;
+
+}
+
+.card-content-wrapper > a:hover {
+    box-shadow: var(--white) 0 0 25px 0;
+    background-color: var(--white);
+    transform: translateY(-3px);
+
+}
+
+.card-content-wrapper > a > i {
+    justify-content: center;
+    font-size: 16px;
+    /*color: var(--yellow);*/
+    transition-duration: 0.3s;
+
+}
+
+.card-content-wrapper > a:hover > i {
+    color: var(--backdrop-filter-color-black);
+
+}
+
+.card-content-wrapper > h4 ,
+.card-content-wrapper > p ,
+.card-content-wrapper > a {
+    transition-duration: 1.5s;
+    /*transition-delay: 0.8s;*/
+
+}
+
+.project-card:hover > .card-content-wrapper > h4 ,
+.project-card:hover > .card-content-wrapper > p ,
+.project-card:hover > .card-content-wrapper > a {
+    opacity: 1;
+
+}
+
+/*---------------------------------------achievements section---------------------------------------*/
+.achievements-sec {
     height: 500px;
     background-color: var(--grey);
+
+
+}
+
+#achievements-sub-header {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    font-size: 16px;
+    font-weight: 400;
 
 }
 
