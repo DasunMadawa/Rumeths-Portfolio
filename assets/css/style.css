@@ -22,12 +22,39 @@
 body {
     margin: 0;
     color: var(--black);
+
 }
 
 ::selection {
     background-color: var(--yellow);
     color: var(--grey);
+
 }
+
+/*---------------------------------------scroll bar---------------------------------------*/
+::-webkit-scrollbar {
+    width: 12px;
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--white);
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--yellow);
+    border-radius: 12px;
+    transition: background-color 2s ease-in-out;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border: 2px solid var(--yellow);
+    background-color: var(--white);
+
+}
+
 
 
 /*---------------------------------------navbar---------------------------------------*/
@@ -581,7 +608,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 80px;
+    /*margin-bottom: 80px;*/
 
 }
 
@@ -659,8 +686,9 @@ a {
     position: relative;
     width: 100%;
     /*height: 800px;*/
+    padding-top: 100px;
     background-color: var(--grey);
-    padding-bottom: 100px;
+    /*padding-bottom: 100px;*/
 
 }
 
@@ -754,7 +782,8 @@ a {
 .projects-sec {
     width: 100%;
     background-color: var(--grey);
-    padding-bottom: 80px;
+    padding-top: 100px;
+    /*padding-bottom: 80px;*/
 
 }
 
@@ -911,7 +940,7 @@ a {
 .achievements-sec {
     /*height: 500px;*/
     background-color: var(--grey);
-    padding-bottom: 100px;
+    padding: 100px 0;
 
 }
 
@@ -1120,6 +1149,7 @@ footer {
     align-items: center;
 
 }
+
 
 
 
