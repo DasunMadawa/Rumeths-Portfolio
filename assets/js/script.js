@@ -9,7 +9,7 @@
 // });
 
 
-$("#social-icons > a > i").hover(
+$(".social-icons > a > i").hover(
     function () {
         $(this).parent("a").children("span").css(
             {

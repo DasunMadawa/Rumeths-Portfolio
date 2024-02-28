@@ -343,7 +343,7 @@ a {
 .social-icons > a > span {
     position: absolute;
     padding: 15px 20px;
-    background-color: var(--yellow);
+    /*background-color: var(--yellow);*/
     color: var(--white);
     font-size: 14px;
     border-radius: 50px;
@@ -359,7 +359,7 @@ a {
     width: 15px;
     height: 15px;
     transform: rotate(45deg);
-    background-color: var(--yellow);
+    /*background-color: var(--yellow);*/
     left: 0;
     right: 0;
     bottom: -5px;
@@ -386,63 +386,63 @@ a {
     transition-duration: 0.5s;
 }
 
-#social-github > i:hover {
+.social-github > i:hover {
     background-color: var(--github_background);
     color: var(--white);
 }
 
-#social-linkedin > i:hover {
+.social-linkedin > i:hover {
     background-color: var(--linkedin_background);
     color: var(--white);
 }
 
-#social-whatsapp > i:hover {
+.social-whatsapp > i:hover {
     background-color: var(--whatsapp_background);
     color: var(--white);
 }
 
-#social-telegram > i:hover {
+.social-telegram > i:hover {
     background-color: var(--telegram_background);
     color: var(--white);
 }
 
-#social-github > span {
+.social-github > span {
     background-color: var(--github_background);
 
 }
 
-#social-linkedin > span {
+.social-linkedin > span {
     background-color: var(--linkedin_background);
 
 }
 
-#social-whatsapp > span {
+.social-whatsapp > span {
     background-color: var(--whatsapp_background);
 
 }
 
-#social-telegram > span {
+.social-telegram > span {
     background-color: var(--telegram_background);
 
 }
 
 
-#social-github > span:before {
+.social-github > span:before {
     background-color: var(--github_background);
 
 }
 
-#social-linkedin > span:before {
+.social-linkedin > span:before {
     background-color: var(--linkedin_background);
 
 }
 
-#social-whatsapp > span:before {
+.social-whatsapp > span:before {
     background-color: var(--whatsapp_background);
 
 }
 
-#social-telegram > span:before {
+.social-telegram > span:before {
     background-color: var(--telegram_background);
 
 }
@@ -1018,7 +1018,109 @@ a {
 
 /*---------------------------------------footer section---------------------------------------*/
 footer {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
+    /*height: 500px;*/
+    background-color: var(--white);
 
 }
+
+.footer-wrapper {
+    /*border: 1px solid black;*/
+    padding: 20px;
+
+}
+
+.footer-wrapper > div > div {
+    /*border: 1px solid blue;*/
+
+}
+
+.footer-wrapper-content-upper {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer-desc-wrapper {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+
+}
+
+.footer-header {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+
+}
+
+.footer-desc-wrapper > h1 {
+    font-size: 36px;
+    font-weight: 500;
+    height: fit-content;
+    /*padding: 0;*/
+    margin: 0;
+
+}
+
+.footer-desc-wrapper > p {
+    font-size: 14px;
+    font-weight: 400;
+    /*padding: 0;*/
+    margin: 0;
+
+}
+
+.paths-wrapper > h4 ,
+.contacts-wrapper > h4 {
+    padding: 0;
+    font-size: 24px;
+    font-weight: 500;
+    border-bottom: 4px solid var(--blue);
+
+}
+
+.paths-wrapper > a ,
+.contacts-wrapper > h6 ,
+.contacts-wrapper> h6 > a {
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
+    transition-duration: 0.3s;
+
+}
+
+.paths-wrapper > a:hover ,
+.contacts-wrapper> h6 > a:hover {
+    color: var(--yellow);
+
+}
+
+.footer-wrapper > div > .social-icons {
+    top: 0;
+
+}
+
+.footer-wrapper > div > .social-icons > a {
+    background-color: var(--grey);
+
+}
+.footer-wrapper-content-bottom {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#c-tag {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+
+}
+
+
+
 
