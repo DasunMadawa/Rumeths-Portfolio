@@ -74,5 +74,48 @@ $(window).resize(function() {
 // Call the function once on page load
 $(window).resize();
 
+$("#menu-icon > i:first-child").on("click", () => {
+    $("#navbar > a , #theme-wrapper").css({opacity:"1"});
+    $("header").addClass("header-size-up");
+
+    $("#menu-icon > i:first-child").addClass("hide");
+    $("#menu-icon > i:nth-child(2)").addClass("show");
+
+    setTimeout(navbarTransitionUp , 1800);
+
+});
+
+$("#menu-icon > i:nth-child(2)").on("click", () => {
+    $("#navbar > a , #theme-wrapper").css({opacity:"0"});
+    $("header").removeClass("header-size-up");
+
+    $("#menu-icon > i:first-child").removeClass("hide");
+    $("#menu-icon > i:nth-child(2)").removeClass("show");
+
+    setTimeout(navbarTransitionDown , 1800);
+
+});
+
+function navbarTransitionDown() {
+    $("#home").css({transitionDelay: "0s"});
+    $("#about-me").css({transitionDelay: "0.1s"});
+    $("#services").css({transitionDelay: "0.2s"});
+    $("#projects").css({transitionDelay: "0.3s"});
+    $("#achievements").css({transitionDelay: "0.4s"});
+    $("#contact").css({transitionDelay: "0.5s"});
+    $("#theme-wrapper").css({transitionDelay: "0.6s"});
+
+}
+
+function navbarTransitionUp() {
+    $("#home").css({transitionDelay: "0.6s"});
+    $("#about-me").css({transitionDelay: "0.5s"});
+    $("#services").css({transitionDelay: "0.4s"});
+    $("#projects").css({transitionDelay: "0.3s"});
+    $("#achievements").css({transitionDelay: "0.2s"});
+    $("#contact").css({transitionDelay: "0.1s"});
+    $("#theme-wrapper").css({transitionDelay: "0s"});
+
+}
 
 
