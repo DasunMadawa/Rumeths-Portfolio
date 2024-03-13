@@ -219,7 +219,7 @@ a {
     width: 90%;
     background-position: center;
     background-size: cover;
-    background-image: url("/assets/img/hero-img.png");
+    background-image: url("../img/hero-img.png");
     z-index: 1;
     left: 0;
     right: 0;
