@@ -75,7 +75,9 @@ $(window).resize(function() {
 $(window).resize();
 
 $("#menu-icon > i:first-child").on("click", () => {
-    $("#navbar > a , #theme-wrapper").css({opacity:"1"});
+    // $("#navbar").removeClass("nav-top-up");
+    $("#navbar").addClass("nav-top-down");
+    $("#navbar > a , #theme-wrapper").addClass("opacity-up");
     $("header").addClass("header-size-up");
 
     $("#menu-icon > i:first-child").addClass("hide");
@@ -86,7 +88,7 @@ $("#menu-icon > i:first-child").on("click", () => {
 });
 
 $("#menu-icon > i:nth-child(2)").on("click", () => {
-    $("#navbar > a , #theme-wrapper").css({opacity:"0"});
+    $("#navbar > a , #theme-wrapper").removeClass("opacity-up");
     $("header").removeClass("header-size-up");
 
     $("#menu-icon > i:first-child").removeClass("hide");
@@ -104,7 +106,8 @@ function navbarTransitionDown() {
     $("#achievements").css({transitionDelay: "0.4s"});
     $("#contact").css({transitionDelay: "0.5s"});
     $("#theme-wrapper").css({transitionDelay: "0.6s"});
-
+    // $("#navbar").addClass("nav-top-up");
+    $("#navbar").removeClass("nav-top-down");
 }
 
 function navbarTransitionUp() {

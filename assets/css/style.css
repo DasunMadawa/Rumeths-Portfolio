@@ -56,7 +56,6 @@ body {
 }
 
 
-
 /*---------------------------------------navbar---------------------------------------*/
 header {
     position: fixed;
@@ -304,7 +303,7 @@ a {
 
 }
 
-.hero-headers > h4 , .hero-headers > h1 {
+.hero-headers > h4, .hero-headers > h1 {
     margin: 10px 0;
     font-weight: 600;
 }
@@ -414,7 +413,7 @@ a {
     border-radius: 50px;
     top: 0;
     opacity: 0;
-    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265 , 1.55);
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
 }
 
@@ -520,6 +519,11 @@ a {
 
 }
 
+.about-me-sec > div > div {
+    /*justify-content: center;*/
+
+}
+
 .about-me-img-wrapper {
     position: relative;
     width: fit-content;
@@ -576,9 +580,9 @@ a {
 
 }
 
-.about-me-header ,
-.about-me-desc ,
-.languages-header ,
+.about-me-header,
+.about-me-desc,
+.languages-header,
 #languages-sub-header {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -617,6 +621,7 @@ a {
     font-weight: 600;
     margin: 0 0 25px 0;
     padding: 0;
+    text-align: center;
 
 }
 
@@ -646,6 +651,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     /*margin-bottom: 80px;*/
 
 }
@@ -691,7 +697,7 @@ a {
     stroke-linejoin: round;
     stroke-width: 16;
     top: -30px;
-    transition: all 0.7s cubic-bezier(0.68, -0.55, 0.265 , 1.55);
+    transition: all 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     opacity: 0;
 
 }
@@ -784,8 +790,8 @@ a {
 
 }
 
-.service-card > i ,
-.service-card > h4 ,
+.service-card > i,
+.service-card > h4,
 .service-card > p {
     /*position: absolute;*/
     /*width: fit-content;*/
@@ -936,7 +942,7 @@ a {
     border-radius: 10px;
     padding: 0;
     border: 2px solid var(--white);
-    transition-duration: 0.3s!important;
+    transition-duration: 0.3s !important;
     opacity: 0;
 
 }
@@ -950,6 +956,7 @@ a {
 
 .card-content-wrapper > a > i {
     justify-content: center;
+    align-items: center;
     font-size: 16px;
     /*color: var(--yellow);*/
     transition-duration: 0.3s;
@@ -961,16 +968,16 @@ a {
 
 }
 
-.card-content-wrapper > h4 ,
-.card-content-wrapper > p ,
+.card-content-wrapper > h4,
+.card-content-wrapper > p,
 .card-content-wrapper > a {
     transition-duration: 1.5s;
     /*transition-delay: 0.8s;*/
 
 }
 
-.project-card:hover > .card-content-wrapper > h4 ,
-.project-card:hover > .card-content-wrapper > p ,
+.project-card:hover > .card-content-wrapper > h4,
+.project-card:hover > .card-content-wrapper > p,
 .project-card:hover > .card-content-wrapper > a {
     opacity: 1;
 
@@ -1000,7 +1007,7 @@ a {
 }
 
 .achievement-card {
-    aspect-ratio: 4/6;
+    /*aspect-ratio: 4/6;*/
     /*border: 1px solid red;*/
     margin: 20px;
     border-radius: 20px;
@@ -1144,7 +1151,7 @@ footer {
 
 }
 
-.paths-wrapper > h4 ,
+.paths-wrapper > h4,
 .contacts-wrapper > h4 {
     padding: 0;
     font-size: 24px;
@@ -1153,9 +1160,9 @@ footer {
 
 }
 
-.paths-wrapper > a ,
-.contacts-wrapper > h6 ,
-.contacts-wrapper> h6 > a {
+.paths-wrapper > a,
+.contacts-wrapper > h6,
+.contacts-wrapper > h6 > a {
     padding: 0;
     font-size: 14px;
     font-weight: 400;
@@ -1163,8 +1170,8 @@ footer {
 
 }
 
-.paths-wrapper > a:hover ,
-.contacts-wrapper> h6 > a:hover {
+.paths-wrapper > a:hover,
+.contacts-wrapper > h6 > a:hover {
     color: var(--yellow);
 
 }
@@ -1178,6 +1185,7 @@ footer {
     background-color: var(--grey);
 
 }
+
 .footer-wrapper-content-bottom {
     display: flex;
     justify-content: space-between;
@@ -1190,7 +1198,6 @@ footer {
     align-items: center;
 
 }
-
 
 
 @media all and (max-width: 1680px) {
@@ -1217,7 +1224,7 @@ footer {
 
     }
 
-    .hero-headers > h4 , .hero-headers > h1 {
+    .hero-headers > h4, .hero-headers > h1 {
         margin: 10px 0;
     }
 
@@ -1230,6 +1237,7 @@ footer {
         font-size: 72px;
         color: var(--yellow);
     }
+
     .hero-headers > h1:nth-child(3) {
         font-size: 36px;
 
@@ -1238,7 +1246,7 @@ footer {
     .cv-btn {
         width: 180px;
         height: 45px;
-        padding:  15px;
+        padding: 15px;
 
     }
 
@@ -1263,7 +1271,7 @@ footer {
     .social-icons > a > span {
         padding: 10px 15px;
         font-size: 12px;
-        transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265 , 1.55);
+        transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     }
 
@@ -1279,6 +1287,36 @@ footer {
 
     }
 
+    #languages-sub-header {
+        margin: 0 0 40px 0;
+
+    }
+
+    .languages > i {
+        font-size: 22px;
+        width: 45px;
+        height: 45px;
+        margin: 20px 20px;
+
+    }
+
+    .languages > i > span {
+        font-size: 12px;
+        padding: 10px 15px;
+
+    }
+
+    .languages > i:hover > span {
+        top: -50px;
+
+    }
+
+    .languages > i > span:before {
+        width: 10px;
+        height: 10px;
+
+    }
+
 }
 
 @media all and (max-width: 1440px) {
@@ -1288,7 +1326,7 @@ footer {
 
     }
 
-    .hero-sec{
+    .hero-sec {
         height: 899px;
 
     }
@@ -1317,7 +1355,7 @@ footer {
 
     }
 
-    .hero-headers > h4 , .hero-headers > h1 {
+    .hero-headers > h4, .hero-headers > h1 {
         margin: 5px 0;
     }
 
@@ -1347,6 +1385,7 @@ footer {
 
     }
 
+    .a
 }
 
 @media all and (max-width: 1280px) {
@@ -1386,10 +1425,14 @@ footer {
 
     }
 
+    #navbar {
+        top: -470px;
 
-    #navbar > a ,
-    #theme-wrapper
-    {
+    }
+
+
+    #navbar > a,
+    #theme-wrapper {
         transition-duration: 1s;
         opacity: 0;
     }
@@ -1462,15 +1505,35 @@ footer {
 
 
     .show {
-        display: block!important;
+        display: block !important;
     }
 
     .hide {
-        display: none!important;
+        display: none !important;
     }
 
     .header-size-up {
         height: 100%;
+
+    }
+
+    .nav-top-up {
+        top: -470px!important;
+    }
+
+    .nav-top-down {
+        top: 80px!important;
+    }
+
+    .opacity-up {
+        opacity: 1!important;
+    }
+
+}
+
+@media all and (max-width: 991px) {
+    .about-me-header {
+        text-align: center;
 
     }
 
@@ -1482,20 +1545,158 @@ footer {
 
     }
 
+    .hero-headers > h1:nth-child(2) {
+        margin-right: 60px;
+    }
+
     .hero-img-wrapper {
         height: 600px;
         bottom: -60px;
+
     }
 
     .social-icons {
 
     }
 
+    .about-me-header ,
+    .languages-header
+    {
+        font-size: 36px;
+
+    }
+
+    .about-me-header {
+        margin: 50px 0 0 0;
+
+    }
+
+    .about-me-desc {
+        font-size: 16px;
+
+    }
+
+    #languages-sub-header ,
+    #services-sub-header ,
+    #projects-sub-header ,
+    #achievements-sub-header {
+        font-size: 14px;
+
+    }
+
+    .languages-wrapper {
+        margin-top: 50px;
+
+    }
+
+    #services-sub-header {
+        font-size: 14px;
+        margin: 0 0 60px 0;
+
+    }
+
+    .projects-sec ,
+    .achievements-sec {
+        padding-top: 50px;
+
+    }
+
+    .footer-wrapper-content-upper {
+        padding: 0 20px;
+
+    }
+
+    .footer-desc-wrapper > h1 {
+        font-size: 28px;
+
+    }
+
+    .footer-desc-wrapper > p {
+        font-size: 12px;
+
+    }
+
+    .paths-wrapper > h4,
+    .contacts-wrapper > h4 {
+        font-size: 24px;
+
+    }
+
+    .paths-wrapper > a,
+    .contacts-wrapper > h6,
+    .contacts-wrapper > h6 > a {
+        font-size: 12px;
+
+    }
 
 }
 
 @media all and (max-width: 660px) {
+    .about-me-header ,
+    .languages-header
+    {
+        font-size: 24px;
 
+    }
+
+    .about-me-header {
+        margin: 40px 0 0 0;
+
+    }
+
+    .about-me-desc {
+        font-size: 12px;
+
+    }
+
+    #languages-sub-header {
+        font-size: 12px;
+
+    }
+
+    .languages-wrapper {
+        margin-top: 50px;
+
+    }
+
+    #services-sub-header ,
+    #projects-sub-header ,
+    #achievements-sub-header {
+        font-size: 12px;
+
+    }
+
+    .service-card > i {
+        font-size: 48px;
+
+    }
+
+    .service-card > h4 {
+        font-size: 18px;
+
+    }
+
+    .service-card > p {
+        font-size: 12px;
+
+    }
+
+
+}
+
+@media all and (max-width: 576px) {
+    .footer-desc-wrapper {
+        padding: 0 0 10px 0;
+
+    }
+
+}
+
+@media all and (max-width: 550px) {
+    .footer-wrapper-content-bottom {
+        justify-content: center;
+
+    }
 
 }
 
@@ -1513,7 +1714,7 @@ footer {
 
     }
 
-    .hero-headers > h4 , .hero-headers > h1 {
+    .hero-headers > h4, .hero-headers > h1 {
         margin: 5px 0;
     }
 
@@ -1545,6 +1746,53 @@ footer {
 
     }
 
+    .upper-design {
+        width: 100px;
+        height: 120px;
+        top: 55px;
+
+    }
+
+    .about-me-img {
+        height: 300px;
+
+    }
+
+    .card-content-wrapper > h4 {
+        font-size: 18px;
+
+    }
+
+    .card-content-wrapper > p {
+        font-size: 14px;
+
+    }
+
+    .card-content-wrapper > a {
+        width: 30px;
+        height: 30px;
+
+    }
+
+    .card-content-wrapper > a > i {
+        font-size: 12px;
+
+    }
+
+
+}
+
+@media all and (max-width: 430px) {
+    .card-content-wrapper > h4 {
+        font-size: 16px;
+
+    }
+
+    .card-content-wrapper > p {
+        font-size: 12px;
+
+    }
+
 }
 
 @media all and (max-width: 425px) {
@@ -1570,11 +1818,65 @@ footer {
 
     }
 
+    .languages > i {
+        margin: 15px 15px;
+    }
+
+    .service-card {
+        padding: 25px 25px;
+
+    }
+    .service-card > i,
+    .service-card > h4,
+    .service-card > p {
+        margin: 0;
+        text-align: center;
+
+    }
+
+}
+
+@media all and (max-width: 400px) {
+    .card-content-wrapper > h4 {
+        margin: 0 0 10px 0;
+
+    }
+
 }
 
 @media all and (max-width: 380px) {
     .hero-img-wrapper {
         left: -15%;
+
+    }
+
+    .card-content-wrapper {
+        padding: 10px;
+
+    }
+
+}
+
+@media all and (max-width: 360px) {
+    .card-content-wrapper > h4 {
+        font-size: 14px;
+
+    }
+
+    .card-content-wrapper > p {
+        font-size: 10px;
+
+    }
+
+    .card-content-wrapper > a {
+        width: 28px;
+        height: 28px;
+
+    }
+
+    .card-content-wrapper > a > i {
+        font-size: 10px;
+
     }
 
 }
@@ -1583,6 +1885,31 @@ footer {
     .hero-img-wrapper {
         height: 500px;
         left: -5%;
+
+    }
+
+    .service-card > i,
+    .service-card > h4,
+    .service-card > p {
+        margin: 10px 0;
+        text-align: center;
+
+    }
+
+    .paths-wrapper {
+        width: 100%;
+
+    }
+
+    .paths-wrapper {
+        width: 100%;
+
+    }
+
+    .contacts-wrapper {
+        width: 100%;
+        padding: 0;
+
     }
 
 }
@@ -1590,6 +1917,7 @@ footer {
 @media all and (max-width: 345px) {
     .hero-img-wrapper {
         left: -10%;
+
     }
 
 }
