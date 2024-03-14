@@ -561,6 +561,7 @@ a {
     position: relative;
     background-color: var(--grey);
     padding: 5% 0;
+    overflow: hidden;
 
 }
 
