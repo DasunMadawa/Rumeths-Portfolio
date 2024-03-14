@@ -8,6 +8,19 @@
 //     });
 // });
 
+// pre loader
+window.addEventListener('load', () => {
+    document.getElementById("pre-load-bg-outer").style.display = "none";
+    document.getElementById("pre-load-logo").style.display = "none";
+    $("#pre-load > div:nth-child(2)").css({'backdrop-filter': 'blur(0px)'});
+
+    setTimeout(preloaderHide, 1500);
+
+});
+
+let preloaderHide = function () {
+    document.getElementById("pre-load").style.display = "none";
+}
 
 $(".social-icons > a > i").hover(
     function () {
