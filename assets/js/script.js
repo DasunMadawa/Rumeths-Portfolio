@@ -61,7 +61,7 @@ function setLoadingAnimationsSocialBtns4() {
 
 $(".social-icons > a > i").hover(
     function () {
-        let topVal = $(window).width() < 1600 ? "-40px" : "-55px";
+        let topVal = $(window).width() < 1600 ? "-50px" : "-65px";
 
         $(this).parent("a").children("span").css(
             {
